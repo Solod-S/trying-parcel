@@ -52,6 +52,7 @@
     "bindings": "^1.5.0",
     "bn.js": "^5.2.1",
     "boolbase": "^1.0.0",
+    "bootstrap.native": "^4.2.0",
     "brace-expansion": "^1.1.11",
     "braces": "^2.3.2",
     "brfs": "^1.6.1",
