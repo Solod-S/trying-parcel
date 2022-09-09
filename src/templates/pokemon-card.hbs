@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-img-top">
+    <img src="{{sprites.front_default}}" alt="{{name}}">
+    <img src="{{sprites.back_default}}" alt="{{name}}">
+   {{!-- возьми из объекта sprites и в нем значение свойства front_default --}}
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">Имя: {{name}}</h2>
+    <p class="card-text">Вес: {{weight}}</p>
+    <p class="card-text">Рост: {{height}}</p>
+
+    <p class="card-text"><b>Умения</b></p>
+    {{!-- в abilities: лежит массив с обїектами который нам нужно будет перебрать шаблонизатором --}}
+    <ul class="list-group"></ul>
+    {{#each abilities}}
+    {{!-- свойство abilities --}}
+      <li class="list-group-item">{{ability.name}}</li>
+      {{!-- в нем (в abilities:) лежат объекты(ability) с свойствами (name) => берем ability.name --}}
+    {{/each}}
+    </ul>
+  </div>
+</div>
