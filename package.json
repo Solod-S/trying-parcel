@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "json-server": "^0.17.0",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-custom-dist-structure": "^1.1.18"
   },
@@ -555,7 +556,8 @@
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/*.html --public-url /trying-parcel/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch db.json --port 7777 --delay 400"
   },
   "repository": {
     "type": "git",
